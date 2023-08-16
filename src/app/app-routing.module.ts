@@ -11,6 +11,27 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'ofertas',
+    loadChildren: () => import('./promocoes/promocoes.module').then( m => m.PromocoesPageModule)
+  },
+  {
+    path: 'tenis',
+    loadChildren: () => import('./tenis/tenis.module').then( m => m.TenisPageModule)
+  },
+  {
+    path: 'blusa',
+    loadChildren: () => import('./blusa/blusa.module').then( m => m.BlusaPageModule)
+  },
+  {
+    path: 'camisa',
+    loadChildren: () => import('./camisa/camisa.module').then( m => m.CamisaPageModule)
+  },
+  {
+    path: 'calca',
+    loadChildren: () => import('./calca/calca.module').then( m => m.CalcaPageModule)
+  },
+
 ];
 
 @NgModule({

@@ -24,3 +24,18 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+
+ion-header{
+  ion-toolbar{
+    --background: var(--ion-color-dark);
+    ion-back-button{
+      color: var(--ion-color-warning);
+    }
+    ion-title{
+      color: var(--ion-color-warning);
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}
