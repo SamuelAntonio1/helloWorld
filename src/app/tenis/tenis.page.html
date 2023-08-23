@@ -18,11 +18,12 @@
         <img alt="Silhouette of mountains" src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h1a/hf8/h00/h00/10222598946846/1002001070173U-01-BASEIMAGE-Hires.jpg" />
       </ion-thumbnail>
       <ion-label>
-        <h2>{{produto.nome}}</h2>
+        <h2>{{produto.nome | uppercase}}</h2>
         <p>{{produto.descricao}}</p>
       </ion-label>
-      <ion-badge color="dark">R$ {{produto.valor}}</ion-badge>
-      <ion-button slot="end" expand="block">
+      <ion-badge color="dark">R$ {{produto.valor | number: '1.2-2'}}</ion-badge>
+
+      <ion-button slot="end" expand="block" (click)="addProdutoCarrinho(produto)">
         <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
       </ion-button>
     </ion-item>

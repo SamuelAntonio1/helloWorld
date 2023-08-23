@@ -1,5 +1,6 @@
 
 import { Component, OnInit } from '@angular/core';
+import { BdtempService } from '../services/bdtemp.service';
 
 @Component({
   selector: 'app-tenis',
@@ -35,9 +36,13 @@ export class TenisPage implements OnInit {
     }
   ];
 
-  constructor() { }
+  constructor(public bdtemp: BdtempService) { }
 
   ngOnInit() {
+  }
+
+  addProdutoCarrinho(produto: any){
+    this.bdtemp.addProdutoCarrinho(produto);
   }
 
 }
