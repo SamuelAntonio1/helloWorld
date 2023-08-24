@@ -30,7 +30,11 @@ const routes: Routes = [
   {
     path: 'calca',
     loadChildren: () => import('./calca/calca.module').then( m => m.CalcaPageModule)
+  },  {
+    path: 'carrinho',
+    loadChildren: () => import('./carrinho/carrinho.module').then( m => m.CarrinhoPageModule)
   },
+
 
 ];
 
