@@ -1,120 +1,44 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
 
-    <ion-title>Promoções</ion-title>
+    <ion-title>PROMOÇÕES</ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button routerLink="/carrinho">
+        <ion-icon name="cart-outline"></ion-icon>
+        <ion-badge color="warning">{{qtdeItensCarrinho}}</ion-badge>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
   <ion-searchbar mode="ios" animated="true" placeholder="Buscar produto"></ion-searchbar>
 
   <ion-list>
-    <ion-item lines="full">
+    <ion-item *ngFor="let produto of listaProdutos" lines="full">
       <ion-thumbnail slot="start">
-        <img alt="Silhouette of mountains" src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h1a/hf8/h00/h00/10222598946846/1002001070173U-01-BASEIMAGE-Hires.jpg" />
+        <img [src]="produto.foto" />
       </ion-thumbnail>
       <ion-label>
-        <h2>TÊNIS OLD SKOOL BLACK PEWTER</h2>
-        <h4>
-          Material: Couro -
-          Cor: Cinza
-        </h4>
+        <h2>{{produto.nome | uppercase}}</h2>
+        <p>{{produto.descricao}}</p>
       </ion-label>
+      <ion-badge color="dark">R$ {{produto.valor | number: '1.2-2'}}</ion-badge>
 
-      <ion-badge color="dark">R$ 450,00</ion-badge>
-
-      <ion-button slot="end" expand="block">
+      <ion-button slot="end" expand="block" (click)="addProdutoCarrinho(produto)">
         <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
       </ion-button>
     </ion-item>
 
-    <ion-item lines="full">
-      <ion-thumbnail slot="start">
-        <img alt="Silhouette of mountains" src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h5e/h37/h00/h00/11319268737054/1002001070010U-01-BASEIMAGE-Hires.jpg" />
-      </ion-thumbnail>
-      <ion-label>
-        <h2>TÊNIS OLD SKOOL BLACK PEWTER</h2>
-        <h4>
-          Material: Couro -
-          Cor: Branco
-        </h4>
-      </ion-label>
-      <ion-badge color="dark">R$ 450,00</ion-badge>
 
-      <ion-button slot="end" expand="block">
-        <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
-      </ion-button>
-    </ion-item>
+
+
   </ion-list>
 
-  <ion-item lines="full">
-    <ion-thumbnail slot="start">
-      <img alt="Silhouette of mountains" src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h67/ha8/h00/h00/10805411250206/4701000830006U-01-BASEIMAGE-Hires.jpg" />
-    </ion-thumbnail>
-    <ion-label>
-      <h2>MOLETOM VANS CLASSIC</h2>
-      <h4>
-        Cor: Cinza
-      </h4>
-    </ion-label>
-    <ion-badge color="dark">R$ 300,00</ion-badge>
-
-    <ion-button slot="end" expand="block">
-      <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
-    </ion-button>
-  </ion-item>
-
-  <ion-item lines="full">
-    <ion-thumbnail slot="start">
-      <img alt="Silhouette of mountains" src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h62/h40/h00/h00/11416201232414/4703700020001U-01-BASEIMAGE-Hires.jpg" />
-    </ion-thumbnail>
-    <ion-label>
-      <h2>MOLETOM VANS CLASSIC</h2>
-      <h4>
-        Cor: Vermelho
-      </h4>
-    </ion-label>
-    <ion-badge color="dark">R$ 240,00</ion-badge>
-
-    <ion-button slot="end" expand="block">
-      <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
-    </ion-button>
-  </ion-item>
-
-  <ion-item lines="full">
-    <ion-thumbnail slot="start">
-      <img alt="Silhouette of mountains" src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/h95/h42/h00/h00/11508558528542/4701603200014U-01-BASEIMAGE-Hires.jpg" />
-    </ion-thumbnail>
-    <ion-label>
-      <h2>CAMISETA VANS CLASSIC</h2>
-      <h4>
-        Cor: Azul
-      </h4>
-    </ion-label>
-    <ion-badge color="dark">R$ 450,00</ion-badge>
-
-    <ion-button slot="end" expand="block">
-      <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
-    </ion-button>
-  </ion-item>
-
-  <ion-item lines="full">
-    <ion-thumbnail slot="start">
-      <img alt="Silhouette of mountains" src="https://secure-static.vans.com.br/medias/sys_master/vans/vans/hbc/h87/h00/h00/11384658133022/4701300520002U-01-BASEIMAGE-Hires.jpg" />
-    </ion-thumbnail>
-    <ion-label>
-      <h2>CALÇA AUTHENTIC CHINO</h2>
-      <h4>
-        Cor: Preto
-      </h4>
-    </ion-label>
-    <ion-badge color="dark">R$ 400,00</ion-badge>
-
-    <ion-button slot="end" expand="block">
-      <ion-icon slot="icon-only" name="cart-outline"></ion-icon>
-    </ion-button>
-  </ion-item>
 </ion-content>
