@@ -9,7 +9,9 @@ import { BdtempService } from '../services/bdtemp.service';
 })
 export class TenisPage implements OnInit {
 
+
   qtdeItensCarrinho = 0;
+
 
   listaProdutos = [
     {nome: "AUTHENTIC",
@@ -52,9 +54,11 @@ export class TenisPage implements OnInit {
     this.bdtemp.addProdutoCarrinho(produto);
 
     this.buscarDadosCarrinho();
+
   }
 
   buscarDadosCarrinho(){
     this.qtdeItensCarrinho = this.bdtemp.buscar('qtdeItensCarrinho');
   }
 }
+
