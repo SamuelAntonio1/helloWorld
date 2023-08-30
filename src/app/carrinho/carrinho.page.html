@@ -15,10 +15,29 @@
 
 <ion-content>
 
+
   <ion-list>
-   
+    <ion-item *ngFor="let item of listaItens; let i = index">
+      <ion-thumbnail slot="start">
+        <img [src]="item['foto']" />
+      </ion-thumbnail>
+
+      <ion-label>
+        <h2>{{item['nome'] | uppercase}}</h2>
+
+        <p>{{item['descricao']}}</p>
+      </ion-label>
+      <ion-badge color="dark">R$ {{item['valor'] | number: '1.2-2'}}</ion-badge>
+
+      <ion-button slot="end" expand="block" (click)="removeProdutoCarrinho(i)">
+        <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+      </ion-button>
+    </ion-item>
   </ion-list>
 
+  <ion-label><ion-button (click)="limparCarrinho()" expand="block">Limpar carrinho</ion-button></ion-label>
+
+  <ion-badge color="dark">A soma total dos produtos é: {{totalCarrinho}}</ion-badge>
 </ion-content>
 
 

@@ -56,5 +56,9 @@ export class BlusaPage implements OnInit {
   buscarDadosCarrinho(){
     this.qtdeItensCarrinho = this.bdtemp.buscar('qtdeItensCarrinho');
   }
+
+  ionViewWillEnter(){
+    this.buscarDadosCarrinho();
+  }
 }
 
