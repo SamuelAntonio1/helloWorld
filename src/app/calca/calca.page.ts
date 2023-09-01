@@ -10,35 +10,23 @@ export class CalcaPage implements OnInit {
   qtdeItensCarrinho = 0;
 
   listaProdutos = [
-    {nome: "AUTHENTIC CHINO SLIM",
+    {nome: "CALÇA NIKE REFLETIVA",
+    descricao: "Cor: PRETO",
+    valor: 150,
+    foto: 'https://pittol.vteximg.com.br/arquivos/ids/261202-330-457/2544581-1.jpg?v=637820094658900000'
+    },
+
+    {nome: "CALÇA DE MOLETOM NIKE",
     descricao: "Cor: CINZA",
+    valor: 250,
+    foto: 'https://static.zattini.com.br/produtos/calca-moletom-nike-nsw-club-jsy-masculina/26/HZM-1929-226/HZM-1929-226_zoom1.jpg?ts=1564778109&ims=544x'
+    },
+
+    {nome: "CALÇA NIKE REFLETIVA",
+    descricao: "Cor: PRETO",
     valor: 450,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h3c/hb6/h00/h00/11384621170718/4701300540001U-01-BASEIMAGE-Hires.jpg'
+    foto: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyrfBa6ghxW65A583jI00j_-sipsliE-pDQWTzGgrIV2wEm0CXvD6yF8vvtZL6EnAZhIY&usqp=CAU'
     },
-
-    {nome: "AUTHENTIC CHINO SLIM",
-    descricao: "Cor: BEGE",
-    valor: 450,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h88/he5/h00/h00/11384619499550/4701300540002U-01-BASEIMAGE-Hires.jpg'
-    },
-
-    {nome: "AUTHENTIC CHINO SLIM",
-    descricao: "Cor: VERDE",
-    valor: 450,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h38/h18/h00/h00/11384626741278/4701300540004U-01-BASEIMAGE-Hires.jpg'
-    },
-
-    {nome: "AUTHENTIC CHINO LOOSE",
-    descricao: "Cor: VERDE",
-    valor: 360,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h88/h71/h00/h00/11219206307870/4701300510001U-01-BASEIMAGE-Hires.jpg'
-    },
-
-    {nome: "RANGE ANAHEIM BAGGY",
-    descricao: "Cor: XADREZ",
-    valor: 350,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/hb8/h97/h00/h00/11384644599838/4701300820001U-01-BASEIMAGE-Hires.jpg'
-    }
   ];
 
   constructor(public bdtemp: BdtempService) { }

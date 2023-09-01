@@ -11,35 +11,23 @@ export class CamisaPage implements OnInit {
   qtdeItensCarrinho = 0;
 
   listaProdutos = [
-    {nome: "KANE LS DRESS",
-    descricao: "Cor: AZUL",
-    valor: 450,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h13/h0f/h00/h00/11255512694814/4710000020001U-01-BASEIMAGE-Hires.jpg'
-    },
-
-    {nome: "MAMI WATA SS",
-    descricao: "Cor: NUDE",
-    valor: 450,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/hb5/he6/h00/h00/11237944885278/4707600050001U-01-BASEIMAGE-Hires.jpg'
-    },
-
-    {nome: "KESSEL SS CROOKED",
+    {nome: "CAMISA NIKE REFLETIVA",
     descricao: "Cor: PRETO",
-    valor: 400,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h96/h2e/h00/h00/11346383863838/4707600080001U-03-BASEIMAGE-Hires.jpg'
+    valor: 250,
+    foto: 'https://cf.shopee.com.br/file/b4a24ca437ee5cc3faebedd8f7c2861f'
     },
 
-    {nome: "SS ANAHEIM SPACE",
-    descricao: "Cor: PRETO",
-    valor: 400,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h5e/h57/h00/h00/11237935513630/4707600020001U-01-BASEIMAGE-Hires.jpg'
+    {nome: "CAMISA NKE JORDAN ",
+    descricao: "Cor: BRANCA",
+    valor: 280,
+    foto: 'https://youridstore.com.br/media/catalog/product/cache/1/image/1200x/472321edac810f9b2465a359d8cdc0b5/8/0/801074-101.jpg'
     },
 
-    {nome: "WOVEN VANS X CURREN",
-    descricao: "Cor: PRETO",
-    valor: 320,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/hed/hcb/h00/h00/10819977150494/4702800310001U-01-BASEIMAGE-Hires.jpg'
-    }
+    {nome: "CAMISA NIKE CLASSIC ",
+    descricao: "Cor: Preto",
+    valor: 150,
+    foto: 'https://static3.tcdn.com.br/img/img_prod/868773/camiseta_nike_court_dry_top_ss_preta_791_1_9575e8fc6b9ce87308060640abbd201e.jpg'
+    },
   ];
 
   constructor(public bdtemp: BdtempService) { }

@@ -11,35 +11,23 @@ export class BlusaPage implements OnInit {
   qtdeItensCarrinho = 0;
 
   listaProdutos = [
-    {nome: "VANS CLASSIC CREW",
+    {nome: "MOLETOM CINZA NKE",
     descricao: "Cor: CINZA",
-    valor: 300,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h23/h01/h00/h00/10786492973086/4701000820001U-01-BASEIMAGE-Hires.png'
+    valor: 350,
+    foto: 'https://img.irroba.com.br/fit-in/600x600/filters:fill(fff):quality(80)/bergally/catalog/vestuario/moletom-masculino/nike-classic/nike-classico-cinza.JPG'
     },
 
-    {nome: "VANS CLASSIC CREW",
-    descricao: "Cor: Preto",
-    valor: 300,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/haf/h10/h00/h00/10786494414878/4701000820002U-01-BASEIMAGE-Hires.png'
+    {nome: "MOLETOM NIKE SB",
+    descricao: "Cor: MARROM",
+    valor: 150,
+    foto: 'https://images.tcdn.com.br/img/img_prod/690339/moletom_nike_sb_icon_hoodie_khaki_10705_1_781359d38ba2a0875a5dc84a3dafdf16.jpg'
     },
 
-    {nome: "CORE BASIC CREW",
-    descricao: "Cor: PRETO",
+      {nome: "MOLETOM NIKE BRANCO",
+    descricao: "Cor: BRANCO",
     valor: 280,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/hd0/h4d/h00/h00/11042047819806/4701002260001U-01-BASEIMAGE-Hires.jpg'
+    foto: 'https://images.tcdn.com.br/img/img_prod/743951/moletom_nike_sportsweae_essential_repel_masculino_9349_1_e894a7a5e3f3703360cd706b46312f9f.jpg'
     },
-
-    {nome: "VERSA STANDARD HOODIE",
-    descricao: "Cor: CINZA",
-    valor: 500,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h29/h5e/h00/h00/11219229638686/4701001080010U-01-BASEIMAGE-Hires.jpg'
-    },
-
-    {nome: "CORE BASIC PO FLEECE",
-    descricao: "Cor: VINHO",
-    valor: 330,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h4c/ha6/h00/h00/11031373742110/4701002270002U-01-BASEIMAGE-Hires.jpg'
-    }
   ];
 
   constructor(public bdtemp: BdtempService) { }

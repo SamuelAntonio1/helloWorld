@@ -14,35 +14,23 @@ export class TenisPage implements OnInit {
 
 
   listaProdutos = [
-    {nome: "AUTHENTIC",
-    descricao: "Cor: VINHO",
-    valor: 400,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/hed/hc4/h00/h00/11346390745118/1002000450143U-01-BASEIMAGE-Hires.jpg'
-    },
+      {nome: "NIKE TN",
+      descricao: "Cor: PRETO",
+      valor: 1000,
+      foto: 'https://imgnike-a.akamaihd.net/1920x1920/024347ID.jpg'
+      },
 
-    {nome: "ERA",
-    descricao: "Cor: Preto",
-    valor: 350,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h51/hfe/h00/h00/11319250780190/1002000650001U-01-BASEIMAGE-Hires.jpg'
-    },
+      {nome: "AIR MAX",
+      descricao: "Cor: BRANCO",
+      valor: 980,
+      foto: 'https://imgcentauro-a.akamaihd.net/1300x1300/97888651.jpg'
+      },
 
-    {nome: "OLD SKOOL",
-    descricao: "Cor: AZUL",
-    valor: 450,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h06/hd5/h00/h00/11319276077086/1002001070009U-01-BASEIMAGE-Hires.jpg'
-    },
-
-    {nome: "SLIP-ON",
-    descricao: "Cor: BRANCO",
-    valor: 500,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/h63/h45/h00/h00/11319266902046/1002000580085U-01-BASEIMAGE-Hires.jpg'
-    },
-
-    {nome: "SK8-HI",
-    descricao: "Cor: PRETO",
-    valor: 350,
-    foto: 'https://secure-static.vans.com.br/medias/sys_master/vans/vans/he8/hf8/h00/h00/11319246749726/1002001230081U-01-BASEIMAGE-Hires.jpg'
-    }
+      {nome: "NIKE ZOON",
+      descricao: "Cor: PRETO",
+      valor: 400,
+      foto: 'https://adaptive-images.uooucdn.com.br/ik-seo/tr:w-1100,h-1594,c-at_max,pr-true,q-90/a152-ofyzta/pv/f6/00/86/90b4f05ecd5496497df2ddc0e3/tenis-nike-air-zoom-vomero-16-masculino-1-large-2.jpg'
+      },
   ];
 
   constructor(public bdtemp: BdtempService) { }
